@@ -1,0 +1,17 @@
+resource = termo tecnico para referenciar aos recursos rest, são recursos que o backend vai disponibilizar, ou controlador
+Serializable = Para que os dados possam ser converdidos em bytes, travegados em rede ou ser gravados em arquivos
+@RestController = para informar que a class será um recurso rest
+@RequestMapping("/conteudos") = caminho do endpoint, seguindo padrão em blural
+@GetMapping = método http do endpoint
+ou
+@ResquestMapping(method=RequestMethod.Get)
+Conectando ao MongoDB com repository e service:
+    Front-end - aplicação cliente
+    Back-end - Controladores Rest > camada de serviço > camada de acesso a dados (repository) : camada de domínio
+@Service = pode ser ingetavel em outras class
+@Repository = para fazer operação com banco de dados
+@Autowired = o proprio spring procura a definição do objetoe instância o objeto
+@Document = para indicar que se trata de uma coleção do mongoDB, uma tabela do banco de dados
+@Configuration = spring boot saber que é uma configuração
+
+
