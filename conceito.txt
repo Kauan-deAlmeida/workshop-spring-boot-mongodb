@@ -13,5 +13,10 @@ Conectando ao MongoDB com repository e service:
 @Autowired = o proprio spring procura a definição do objetoe instância o objeto
 @Document = para indicar que se trata de uma coleção do mongoDB, uma tabela do banco de dados
 @Configuration = spring boot saber que é uma configuração
+CommandLineRunnar = Assim que o sistema iniciar, irá executar tudo que for passado
+Usando padrão DTO = é um obj que tem o papel de carregar dados das entidades de forma simples, assim você pode projetar apenas alguns dados da entidade original
+stream
+map
+
 
 
