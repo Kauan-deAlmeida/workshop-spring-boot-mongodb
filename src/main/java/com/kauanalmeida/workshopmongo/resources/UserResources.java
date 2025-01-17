@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/users")
-public class UseResources {
+public class UserResources {
 
     @Autowired
     private UserService service;
@@ -61,7 +61,7 @@ public class UseResources {
     }
     
     @GetMapping("/{id}/posts")
-    public ResponseEntity<List<Post>> findPostsById(@PathVariable String id){
+    public ResponseEntity<List<Post>> findPostsByUserId(@PathVariable String id){
     	return ResponseEntity.ok().body(service.findById(id).getPosts());
     }
 }
