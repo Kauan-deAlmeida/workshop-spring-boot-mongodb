@@ -21,13 +21,18 @@ public class UserService {
 	}
 	
 	public User findById(String id){
-		User user = repo.findById(id).orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
-		return user;
+		return repo.findById(id).orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
 	}
 	
 	public User insert(User user){
 		return repo.save(user);
 	}
+	
+	public User update(String id, User obj) { 
+		findById(id);
+		obj.setId(id);
+		return repo.save(obj); 
+	} 
 	
 	public void deleteById(String id){
 		findById(id);
