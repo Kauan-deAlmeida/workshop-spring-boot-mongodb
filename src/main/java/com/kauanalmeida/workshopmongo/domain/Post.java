@@ -20,7 +20,7 @@ public class Post implements Serializable{
 	private String id;
 	private Date data;
 	private String title;
-	private String bory;
+	private String body;
 	private AuthorDTO author;
 	
 	private List<CommentDTO> comment = new ArrayList<>();
@@ -31,7 +31,7 @@ public class Post implements Serializable{
 		this.id = id;
 		this.data = date;
 		this.title = title;
-		this.bory = bory;
+		this.body = bory;
 		this.author = author;
 	}
 
@@ -59,12 +59,12 @@ public class Post implements Serializable{
 		this.title = title;
 	}
 
-	public String getBory() {
-		return bory;
+	public String getBody() {
+		return body;
 	}
 
-	public void setBory(String bory) {
-		this.bory = bory;
+	public void setBody(String bory) {
+		this.body = bory;
 	}
 
 	public AuthorDTO getAuthor() {
